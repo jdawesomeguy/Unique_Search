@@ -1,0 +1,26 @@
+[
+  {
+    "header": "Search",
+    "title": "Searched for Google Search",
+    "titleUrl": "https://www.google.com/search?q=dummy+data+example+1",
+    "time": "2024-07-28T10:00:00Z",
+    "products": ["Search"],
+    "activityControls": ["Web & App Activity"]
+  },
+  {
+    "header": "Search",
+    "title": "Searched for Another Search Query",
+    "titleUrl": "https://www.google.com/search?q=example+search+query+2",
+    "time": "2024-07-28T11:30:00Z",
+    "products": ["Search"],
+    "activityControls": ["Web & App Activity"]
+  },
+  {
+    "header": "Search",
+    "title": "Searched for My Third Search",
+    "titleUrl": "https://www.google.com/search?q=third+dummy+entry",
+    "time": "2024-07-28T14:15:00Z",
+    "products": ["Search"],
+    "activityControls": ["Web & App Activity"]
+  }
+]

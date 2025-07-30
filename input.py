@@ -7,7 +7,7 @@ import unittest
 
 def read_json(file_path):
     try:
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r', encoding="utf8") as file:
             data = json.load(file)
         return data
     except FileNotFoundError:
@@ -33,6 +33,7 @@ def parse_data(file_path):
     
     #return the unique searches
     return searches
+
 class testParseData(unittest.TestCase):
     def test_read_json(self):
         # Test reading a valid JSON file

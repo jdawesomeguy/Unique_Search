@@ -4,14 +4,15 @@ A program that takes in a set of google searches and processes the text to find 
 
 Creating this repository to keep track of my work on this project and using this README as a statement of intent I suppose?
 
-Step 1:
-The goal is going to be to take in a csv of searches and output the most unique one from the set (possibly the top 5 or so searches. Will make choosing that a stretch goal as it were.)
+So far I have the project working in its most basic form. It can take in the data from the json file from google takeout,
+then it can process that data and return the top 3 unique searches based on the product of the zipf scores of each word in the search.
 
-Step 2:
-After that, next goal should be setting up something that allows the user to download and parse their search history for their searches. Then format the results to be used in the unique search program.
+Obviously this favors shorter searches because there are less numbers you are multiplying by there.
 
-Planning:
+Next Steps:
 
-I need to decide what constitutes uniqueness for the classification of the searches. I'm leaning towards the average of the rarity of the words as determined by a word frequency dataset like the one here: [https://www.wordfrequency.info/]. (Probably one that's more free due to this being a personal project)
+- Use Tkinter to make the program GUI for people to interact with.
 
-An additional stretch goal for this project will be other definitions of unique since I'm seeing edge cases in my go to definition. (What if someone uses archaic vernacular or some such. Basing uniqueness on just the user's searches could work (like having the most unique search be the one with the words that the user uses the least.). )
+- Create other scoring algorithms for determining how unique a search is
+
+- Make running the tool easier/more asthetically pleasing.

@@ -37,13 +37,13 @@ def parse_data(file_path):
 class testParseData(unittest.TestCase):
     def test_read_json(self):
         # Test reading a valid JSON file
-        data = read_json("test.json")
+        data = read_json("./Input_Files/test.json")
         self.assertIsNotNone(data)
         self.assertIsInstance(data, list)
 
     def test_parse_data(self):
         # Test parsing the search terms from the JSON data
-        searches = parse_data("test.json")
+        searches = parse_data("./Input_Files/test.json")
         self.assertIsNotNone(searches)
         self.assertGreater(len(searches), 0)
         self.assertIn("Google Search", searches)
